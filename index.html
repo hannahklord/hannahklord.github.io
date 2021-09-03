@@ -11,18 +11,19 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arvo">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titan+One">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 <!--MY STYLES-->
 <style>
-    h1 {
+    h1, h3{
         font-family: 'Arvo';
-        
     }
-    h3 {
-        font-family: 'Arvo';
+    header h3 {
+        font-family: 'Source Sans Pro';
     }
 
+    
     a {
         font-family: 'Arvo' !important;
 
@@ -37,14 +38,33 @@
         color: #607d8b;
     }
 
-    p {
+    #weekCard p {
         font-family: "Source Sans Pro";
     }
 
     .intro {
-        font-size: 30px;;
+        
         font-family: "Source Sans Pro";
-        text-align: left;
+        text-align: center;
+
+    }
+
+    .intro h2 {
+        font-size: 30px;
+
+    }
+
+    .intro p {
+        font-size: 25px;
+    }
+
+    #logo {
+        height: 150px;
+        position:relative;
+        float: left;
+        margin-right: 16px;
+        top: 20px;
+        
     }
 
 </style>
@@ -55,16 +75,16 @@
 <body>
 
 <!-- Header -->
-<header class="w3-container w3-theme w3-padding" id="myHeader" style = "background-image: url('background.jpg');">
-  <div class="w3-left" style="padding-top: 50px;">
-  <h3 style="font-size: 50px;">Introduction to Digital Fabrication</h3>
-  <h1 class="w3-xxxlarge w3-animate-bottom" style="font-size: 100px !important;">Hannah Lord</h1>
-  </div>
+<header class="w3-container w3-theme w3-padding" style = "background-image: url('hex.png');">
+    <img id="logo" src="logo.png">
+  <h3 style="font-size: 30px;position:relative;top:16px;">Introduction to Digital Fabrication</h3>
+  <h1 style="font-size: 80px !important;position:relative;bottom:12px;">Hannah Lord</h1>
+  
 </header>
 
 <!--NAV BAR-->
 <nav>
-    <div style="width:100% !important; margin-bottom: 31px;">
+    <div style="width:100% !important;">
       <div class="w3-bar w3-blue-grey" style = "padding-left: 16px;">
         <a href="#" class="w3-bar-item w3-button w3-padding-16">Home</a>
         <a href="#" class="w3-bar-item w3-button w3-padding-16">About Me</a>
@@ -82,20 +102,30 @@
     </div>
   </nav>
 
- 
-  <div class="w3-row-padding w3-center w3-margin-top" style="margin-bottom: 31px;">
-    <div class="w3-auto" style="margin-left:20%; margin-right:20%;">
-        <div class="w3-card w3-container">
-            <div class="intro">Welcome to my page</div>
+<!--INTRO BOX--> 
+  <div class="w3-row-padding w3-center w3-margin-top" style="margin-bottom: 32px;">
+    <div class="w3-auto intro" style="">
+        <div class="w3-container">
+            <div>
+            
+                <h2>Welcome!</h2>
+                <p>My name is Hannah, and on this website I will document my experience in Introduction to Digital Fabrication. I will post
+                    weekly projects and process updates. Below are links to all my projects that will be updated throughout the semester!
+                </p>
+            
+            </div>
         </div>
     </div>
+
+   
+
 </div>
 
 
 
 
   <!--ROW 1-->
-<div class="w3-row-padding w3-center w3-margin-top" style="margin-bottom: 31px;">
+<div class="w3-row-padding w3-center w3-margin-top" style="margin-bottom: 32px;">
     <div class="w3-quarter">
         <div class="w3-card w3-container w3-hover-shadow" id = "weekCard" style="min-height:300px; margin-left: 16px;">
             <h3>Week 1</h3>
@@ -154,15 +184,14 @@
 
 
 <!-- Footer -->
-<footer class="w3-container w3-theme-dark w3-padding-16">
-  <h3>Footer</h3>
+<footer class="w3-container w3-theme w3-padding-16 w3-blue-grey">
+  <h3>Hannah Lord</h3>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
   <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
     <span class="w3-text w3-theme-light w3-padding">Go To Top</span>    
     <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
     <i class="fa fa-chevron-circle-up"></i></span></a>
   </div>
-  <p>Remember to check out our  <a href="w3css_references.asp" class="w3-btn w3-theme-light" target="_blank">W3.CSS Reference</a></p>
 </footer>
 
 <!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
