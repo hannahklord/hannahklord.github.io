@@ -19,6 +19,11 @@
     h1, h3{
         font-family: 'Arvo';
     }
+
+    h5 {
+        text-align: left;
+        font-family: 'Arvo';
+    }
     header h3 {
         font-family: 'Source Sans Pro';
     }
@@ -96,25 +101,46 @@
   <body>
 <div class="w3-container w3-row-padding w3-center w3-margin-top">
     <div class="w3-auto" style="margin-left: 15%;margin-right: 15%;">
-        <img src="printericon.png" style="width: 100px;">
+        <img src="ring.png" style="width: 100px;">
         <h2 class="w3-margin">Following Fusion 360 Tutorial for a Braided Ring</h2>
         <div class="w3-bottombar w3-margin"></div>
         
         <p style="text-align: left;">
            Week 4 was a little bit different from previous weeks. Instead of getting trained on a actual machine in the fabrication space, we were tasked with making a complex Fusino 360 design based on 
-           a tutorial. These designs were then printed on an SLA printer. The SLA (stereolithography) printer is different from the FDM (Fused deposition modeling) printer we used last week. Due to safety, the fab lab staff would be printing our designs.
+           a tutorial. These designs were then printed on an SLA printer. The SLA (stereolithography) printer is different from the FDM (Fused deposition modeling) printer we used last week. Due to safety, the fab lab staff would be printing our designs. But the actual design process was up to us!
         </p>
             
+        <h4>The SLA Printer</h4>
+        <p style="text-align: left;">
+            <a href='https://formlabs.com/store/form-3-basic-package-without-service/?gclid=CjwKCAjwhaaKBhBcEiwA8acsHOeyJm746nOu4B3506Vn2VV-tI857FjC1IaY2AXjjzEQlLnkRTR5ixoCHXIQAvD_BwE#/?&utm_source=google&utm_medium=cpc&utm_campaign=GP_US-NA-Purchase-Shopping-Store-Open-Generic-EN-Paid-Adwords&utm_term=&utm_content=Printers&utm_device=c&_bt=151231206416&_bk=&_bm=&_bn=g&_bg=37763311347'>SLA printers</a>
+            use additive manufacturing to create high resolution, highly precise models. As opposed to the PLA filament used in FDM printers, SLA printers use resin. This material is light reactive, and is cured by a laser to create a hard plastic.<br>
+            SLA printers are the most accurate and precise 3D printers on the market, but are also the most costly. The infographic below from <a href='https://formlabs.com/blog/ultimate-guide-to-stereolithography-sla-3d-printing/'>FormLabs</a> highlights the differences between SLA and FDM printing. The diagram of the printer is also from FormLabs and shows the basic components of the machine!
+        </p>
+        <br><img style="width:40%;padding-top:16px;padding-bottom: 16px;"src = "https://hannahklord.github.io/w4ss/formlabs.png"><br>
+
+        <hr>
+        <h4>The Tutorial</h4>
+        <p style="text-align: left;">
+        I followed a <a href='https://www.youtube.com/watch?v=jwvVqswWjfs'>YouTube tutorial by Etienne K</a>to create a braided ring in Fusion 360.<br>
+
+        The tutorial made good use of a variety of tools and was a very thorough about measurements and reference sketches. Some of the extrusions and pieces were unnecessary for the final design, 
+        but made the building process much easier.<br>
+
+        Unfortunately, there was no voice over or descriptive text that I could use to follow along. Instead I had to carefully watch the mouse's movement and ensure I didn't miss any clicks. With the pace of the 
+        video being relatively fast, I continually had to rewind and rewatch certain sections to understand exactly what was being done. Having a voiceover description of the steps would've made this tutorial much easier. 
+       </p>
+       <br><img style="width:20%;padding-top:16px;padding-bottom: 16px;"src = "https://hannahklord.github.io/w4ss/youtube.png"><br>
+
             <hr>
-            <h4>Designing the Ring</h4>
+            <h4>New Tools!</h4>
             <p style="text-align: left;">
-            I followed a <a href=''>YouTube tutorial by Etienne K</a>to create a braided ring in Fusion 360. I was able to employ some of the previous tools we had learned as well as learned a few new ones!<br>
+            Following the video tutorial, I was able to employ some of the previous tools we had learned as well as learned a few new ones!<br>
            </p>
            <h5>Pipe</h5>
            <p style="text-align: left;">
             The first new tool I used was <b>Pipe</b>. It creates a cylinder around a specified path, and was used in this project to create the "wires" of the braid. <br> 
         </p>
-           <br><img style="width:60%;padding-top:16px;padding-bottom: 16px;"src = "https://hannahklord.github.io/w4ss/pipe.png"><br>
+           <br><img style="width:80%;padding-top:16px;padding-bottom: 16px;"src = "https://hannahklord.github.io/w4ss/pipe.png"><br>
 
            <h5>Construction Lines</h5>
            <p style="text-align: left;">
@@ -126,33 +152,50 @@
            <p style="text-align: left;">
            In order to get the "ring" shape, I used the <b>fold</b> motify utility. This tool, located under the sheet metal tab,  allows you to unfold a body based on a stationary face, then refold it back to the original bend.<br> 
         </p>
-           <br><img style="width:60%;padding-top:16px;padding-bottom: 16px;"src = "https://hannahklord.github.io/w4ss/fold.png"><br>
+           <br><img style="width:80%;padding-top:16px;padding-bottom: 16px;"src = "https://hannahklord.github.io/w4ss/fold.png"><br>
 
            <h5>Point to Point and Copy</h5>
            <p style="text-align: left;">
            This is a very basic tool that I wish I had found sooner. When you want to move an element of the sketch or a body, you can select the <b>point to point</b> option as well as check off the "copy" box. This allowed me to easily copy and connect the initial pipe!<br> 
         </p>
-           <br><img style="width:60%;padding-top:16px;padding-bottom: 16px;"src = "https://hannahklord.github.io/w4ss/point-to-point.png"><br>
+           <br><img style="width:80%;padding-top:16px;padding-bottom: 16px;"src = "https://hannahklord.github.io/w4ss/point-to-point.png"><br>
            
-           <a href='hannahklord.github.io/Hannah_3D_pot.stl' download>
+           <h5>Flange</h5>
+           <p style="text-align: left;">
+           This last new tool is under the sheet metal section. The <b>flange</b> tool creates a sheet metal face from a sketch or edge. Since it is sheet metal, it is bendable and does not have to be an entire face in order to create the extrusion. This tool was used to create the reference bar for the half circumference of the ring.<br> 
+        </p>
+           <br><img style="width:80%;padding-top:16px;padding-bottom: 16px;"src = "https://hannahklord.github.io/w4ss/flange.png"><br>
+           
+           <a href='hannahklord.github.io/designfiles/braided_ring_hlord.stl' download>
            <figure>
             <img src="downloadicon.png" alt="download" style="width:10%; align-content:center;">
             <figcaption>Download my STL file!</figcaption>
           </figure>
         </a>
            <hr>
-            
 
-            <h4>The SLA Printer</h4>
-            <p style="text-align: left;"></p>
-                
-              <hr>
+           <h4>The Final Product</h4>
+           <p style="text-align: left;">
+           A few days after submitting my design, Tuna had completed the printing process for my ring! After cutting off the supports, I could see how detailed the finished product was!
+           <br>
+           Tuna also provided some photos of the machine itself as he was printing our designs. 
+           </p>
+           <br><img style="width:100%;padding-top:16px;padding-bottom: 16px;"src = "https://hannahklord.github.io/w4ss/pics.png"><br>
+           <br><img style="width:100%;padding-top:16px;padding-bottom: 16px;"src = "https://hannahklord.github.io/w4ss/ring.png"><br>
+          
+           <br>
+           
+<hr>
+            
+        
             <h4>Thoughts and Learning Curves</h4>
             <p style="text-align: left;">
             During the design process, I had to continuously rewind the tutorial to make sure I was correctly following the steps. I would occasionally get stuck, but would go through the video at 0.5 speed repeatedly until I was able to duplicate the tutorial. The first time I completed the tutorial, my ring was super wacky and the edges did not connect. I believe this was because I had been using CM instead of MM, like in the tutorial. 
             Instead of going back through and trying to find my mistake, I started from scratch with mm as my units. This time constructing the ring was much quicker and it came out perfect!
+            <br><img style="width:80%;padding-top:16px;padding-bottom: 16px;"src = "https://hannahklord.github.io/w4ss/mess.png"><br>
+           
             <br>
-            Another challenge I faced was changing the view and orientation in Fusion 360. It was incredibly furstrating not being able to get the angle I wanted and having to constantly toggle between the pan and orbit tools. But eventually I got the hang of it. 
+            Another challenge I faced was changing the view and orientation in Fusion 360. It was incredibly furstrating not being able to get the angle I wanted and having to constantly toggle between the pan and orbit tools. But eventually I got the hang of it, and know this will get easier with practice. 
                 </p>
                
         </div>
